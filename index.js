@@ -87,11 +87,12 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  //If no card number is passed through then alert user
   if(cardNumber === undefined) {
     return "Sorry, we don\'t have a credit card on file for you."
   }
   
+  // Calculate total cost of items in shopping cart
   else {
   var totalCost = total()
   cart = []
