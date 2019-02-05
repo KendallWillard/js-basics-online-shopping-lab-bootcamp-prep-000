@@ -23,7 +23,6 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
   var myCart = {};
   myCart = getCart();
   var result = ""
@@ -59,7 +58,6 @@ function viewCart() {
 } 
 
 function total() {
-  // write your code here
   var total = 0
   var myCart = {}
   var j = 0
@@ -74,8 +72,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
   var found = 0;
+  
+  //Search through shopping cart to find the item to be removed and remove it
     for(var i = 0; i < cart.length; i++ ) {
       if(cart[i].itemName === item) {
         found = 1;
